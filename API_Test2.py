@@ -3,9 +3,9 @@ import pycountry as pyco
 
 name = input("Enter the Person's Name: ")
 
-response = req.get(f"https://api.nationalize.io/?name={name}")
+res = req.get(f"https://api.nationalize.io/?name={name}")
 
-result_json = response.json()
+result_json = res.json()
 
 country_list = result_json["country"]
 
